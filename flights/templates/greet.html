@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+    <h1>Shedule New Flights</h1>
+
+    <h1>{{ name }}</h1>
+
+        <div class="main">
+
+            <div class="form">
+                <form action="/done" method = "post">
+                    <h2>ORIGIN</h2>
+                    <input autocomplete="off" autofocus name="from" placeholder="from" type="text">
+                    <!-- <br> -->
+
+                    <h2>DESTINATION</h2>
+                    <input autocomplete="off" autofocus name="to" placeholder="To" type="text">
+                    <h2>FLIGHT-ID</h2>
+                    <input autocomplete="off" autofocus name="flight_id" placeholder="from" type="text">
+                    <!-- <br> -->
+
+                    <h2>DATE</h2>
+                    <input autocomplete="off" autofocus name="time" placeholder="To" type="text">
+                  <button type="submit">Shedule Flights</button>
+        
+                    
+                </form>
+
+            </div>
+
+            
+        </div>
+
+
+
+       
+
+{% endblock %}
+    

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+
+    <h1>Search Your Flights</h1>
+
+        <div class="main">
+
+            <div class="form">
+                <form action="/flights" method="post">
+                    <h2>ORIGIN</h2>
+                    <input autocomplete="off" autofocus name="from" placeholder="from" type="text">
+                    <!-- <br> -->
+
+                    <h2>DESTINATION</h2>
+                    <input autocomplete="off" autofocus name="to" placeholder="To" type="text">
+                  <button type="submit">Get Shedule</button>
+        
+                    
+                </form>
+
+            </div>
+
+            
+        </div>
+
+
+       
+
+       
+
+{% endblock %}
+    

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+{% extends "layout.html" %}
+
+
+{% block body %}
+
+
+
+
+
+
+<div class="table">
+
+
+    <table>
+
+        <tr>
+            <th>id</th>
+            <th>from</th>
+            <th>to</th>
+            <th>Flight-id</th>
+            <th>Time</th>
+        </tr>
+
+        
+        {% for row in all_flights %}
+        <tr>
+            <td>{{ row.id }}</td>
+            <td>{{ row.origin }}</td>
+            <td>{{ row.destination }}</td>
+            <td>{{ row.duration }}</td>
+            <td>{{ row.time }}</td>
+        </tr>
+
+
+
+
+        {% endfor %}
+    </table>
+
+    <form action="/">
+    <button type="submit">BACK</button>
+  </form>
+
+
+    
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}

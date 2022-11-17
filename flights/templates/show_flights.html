@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+    
+
+    <h1>your flights are here!!</h1>
+    
+    <br>
+
+   <!-- // Form {{ start }} - To {{ to }} -->
+
+
+   <div class="table">
+    <table>
+
+        <tr>
+            <th>id</th>
+            <th>from</th>
+            <th>to</th>
+            <th>Flight-id</th>
+            <th>Time</th>
+        </tr>
+    
+        
+        {% for row in list %}
+        <tr>
+            <td>{{ row.id }}</td>
+            <td>{{ row.origin }}</td>
+            <td>{{ row.destination }}</td>
+            <td>{{ row.duration }}</td>
+            <td>{{ row.duration }}</td>
+
+    
+        </tr>
+    
+        {% endfor %}
+    </table>
+
+    
+
+    </div>
+    <form action="/">
+        <button type="submit">BACK</button>
+      </form>
+
+
+ 
+{% endblock %}
+    
